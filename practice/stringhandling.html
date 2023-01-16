@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .invalid-style{
+                color: red;
+                text-align: center;
+                text-decoration: dashed;
+                text-transform: capitalize;
+                font-size: 35px;
+
+            }
+            .valid-style{
+                color: green;
+                font-size: 35px;
+            }
+        </style>
+        <script> 
+          function SubmitClick() {
+            var password = document.getElementById("txtPwd").value;
+            var msg = document.getElementById("msg")
+            if (password.length>10) {
+              //  document.write(`pwd you entered contains ${password.length} Chars <br> you can enter the password with max 10 chars only`.fontcolor('red'))
+              msg.innerHTML= `pwd you entered contains ${password.length}chars <br> must be 10 only`
+              msg.className="invalid-style"
+            }else{
+                //document.write("submitted successfully..".fontcolor('green').fontsize(5));
+                msg.innerHTML = `pwd is submitted`
+                msg.className="valid-style"
+            }
+          }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <legend>password</legend>
+            <input type="password" id="txtPwd">
+            <button onclick="SubmitClick()">submit</button>
+            <h2 id="msg"></h2>
+        </fieldset>
+    </body>
+</html>  

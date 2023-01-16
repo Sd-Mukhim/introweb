@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reference technique</title>
+    <script>
+       
+  /* hierchy language learning by dom[document object modals] method ...
+
+        function bodyload() {
+           window.document.images[0].src="emp.png"
+           window.document.forms[0].elements[1].value="Register"
+           window.document.forms[1].elements[1].value="Login"
+        }
+
+     by using name method ...
+           function bodyload() {
+                img.src = "../geni.jpg";
+                Frmregister.btnRegister.value = "Register";
+                Frmlogin.btnlogin.value = "login";
+                btnPrint.value ="Print Image";
+                btn.btnPrint.value="Print image";
+         } */
+           function bodyload() {
+              count = document.getElementsByTagName("img");
+               alert("total no of images : " + count.length)
+           }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img name="img" id="pic" class="img-header" width="100" height="100" border="5">
+        <input name="btn" type="button" name="btnPrint">
+   
+    </div>
+
+    <div>
+        <form name="Frmregister">
+            <h3>Register</h3>
+            User Name :
+            <input type="text" name="txtName">
+
+            <input type="button" name="btnRegister">
+
+        </form>
+    </div>
+    <div>
+        <form name="Frmlogin">
+            <h3>Login</h3>
+            Email :
+            <input type="text" >
+            <input type="button" name="btnlogin">
+        </form>
+    </div>
+</body>
+</html>

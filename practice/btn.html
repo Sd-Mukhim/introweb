@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head-1">DOM-1 Assignment</h1>
+    <button id="btn" onclick="btnFun()">Mark as Completed</button>
+    <script>
+        function btnFun() {
+             document.getElementById("head-1").innerText="DOM -1 Assignment Completed";
+             document.getElementById("btn").textContent="Completed"
+             document.getElementById("btn").style.backgroundColor="green"
+             document.getElementById("btn").style.color="red";
+
+        }
+    </script>
+    <!-- <h1 id="head1">Iam heading one</h1>
+    <script>
+        document.getElementById("head1").style.color="green";
+        // document.getElementById("head1").style.width="250px";
+        // document.getElementById("head1").style.height="39px";
+        document.getElementById("head1").style.textAlign="center";
+        document.getElementById("head1").style.backgroundColor="red";
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js class</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// static page line no 11 to 32;
+		var bookDetails = {
+			name: 'the magic bricks',
+			price: '456',
+			publisher: 'ABC Book Depot',
+			author: 'Mr Dany chris',
+			category: 'comic',
+			displayBookDetails: function(){
+				console.log("Book Name" + this.name);
+				console.log("Book Price" + this.price);
+				console.log("Author " + this.author);
+				console.log("Discount " + this.discount);
+				console.log("publser " + this.publisher);
+				
+			},
+			getDiscount: function() {
+				if(this.category == 'comic'){
+					this.discount = '10%' 
+				}else{
+					this.discount = '15%' 
+				}
+			}
+		};
+		bookDetails.displayBookDetails()
+		class.bookDetails {
+			constructor(){
+				this.name = 'the magic bricks';
+				this.price = '456';
+				this.publisher = 'ABC Book Depot';
+				this.author = 'Mr Dany chris';
+				this.category = 'comic';
+
+			}
+			displayBookDetails: function(){
+				console.log("Book Name" + this.name);
+				console.log("Book Price" + this.price);
+				console.log("Author " + this.author);
+				console.log("Discount " + this.discount);
+				console.log("publser " + this.publisher);
+				
+			},
+			getDiscount: function() {
+				if(this.category == 'comic'){
+					this.discount = '10%' 
+				}else{
+					this.discount = '15%' 
+				}
+			} 
+		}
+	</script>
+</body>
+</html>

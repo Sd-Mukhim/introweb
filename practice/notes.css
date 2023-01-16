@@ -1,0 +1,15 @@
+               css keyframes
+ -nimation is configured with frames
+ static frame comprises of object witout any change in position or size
+ -keyframe comprises of oblect with change on position or size 
+ -css provided "@keyframe{}" for configureing tweeting anomation
+ tweening is the process of speciffying  efeects at regular frame intervals sthe other frames are configured automatically
+ 
+ 
+
+ syntax ::
+
+ @keyframes reference name {
+  form {initial effects}
+   to  {final effects}
+ }

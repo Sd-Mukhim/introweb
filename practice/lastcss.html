@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animation</title>
+    </head>
+    <style>
+        @keyframes SlideIn { 
+
+            form{
+                margin-left: 120%;
+                transform: scale(2);
+                margin-top: 400px;
+                transform: rotate(180deg);
+            }
+            to{
+                margin-left: 0%;
+                transform: scale(1);
+                margin-top: 0px;
+                transform: rotate(0deg);
+
+            }
+           
+        }
+        @keyframes zoomEffect {
+            form{
+                margin-top: 300px;
+                transform: scale(3);
+            }
+            to{
+                margin-top: 0px;
+                transform: scale(1);
+                
+            }
+        }
+        #pic{
+          animation-name: slideIn;
+          animation-duration: 2s;
+          animation-direction: alternate;  
+        }
+        h2{
+            animation-duration: 10s;
+            animation-name: slideIn;
+        }
+        body{
+            overflow: hidden;
+            background-color: gray;
+        }
+    </style>
+    <body>
+        <img src="roman.png" id="pic" height="150px" width="150px">
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>demonstrating</title>
+	</head>
+	<body>
+		<h2>hi sir ....</h2>
+		<div id="container">
+		<script>
+			var pTag = document.createElement("p")
+			pTag.innerHTML = "hello every one"
+
+			pTag.setAttribute("id" , "sample")
+			pTag.setAttribute("name" , "umsg")
+			pTag.setAttribute("class","container");
+			pTag.style.border = "1px solid";
+			pTag.style.textAlign = "center";
+			pTag.style.backgroundColor = "red";
+
+			console.log(pTag)
+			document.querySelector('#container').append(pTag);
+			document.querySelector("h2").style.background = 'green';
+			console.log(document.querySelector("h2"))
+		</script>
+	</body>
+</html>

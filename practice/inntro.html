@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="Desert_Lion.jfif" alt="">
+    <h1 id="head1">show me the likes here</h1>
+    <h1 id="head2">show me the dislikes here</h1>
+
+    <button onclick="likeFun()">likes</button>
+    <button  onclick="dislikeFun()">dislikes</button>
+    <script>
+        var likes=0;
+        function likeFun() {
+            likes++;
+            document.getElementById("head1").innerText="likes - " + likes;
+        }
+        var dislikes=0;
+        function dislikeFun() {
+            dislikes++;
+            document.getElementById("head2").innerText="dislikes - " + dislikes;
+        }
+    </script>
+</body>
+</html>

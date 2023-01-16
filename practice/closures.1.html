@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>closures</title>
+</head>
+<body>
+    <script>
+             var sum = function(a){
+
+                var c = 5;
+                return function (b){
+                    return a + b + c;
+                }
+             }
+             var res = sum(2);   // calling 
+             console.log(res(5));
+    </script>
+</body>
+</html>

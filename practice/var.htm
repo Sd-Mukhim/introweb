@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>var </title>
+</head>                     
+<body>
+    <script>
+       /* "use strict";
+        function f1() {
+            var x; //declaring
+            x = 10;  //assending
+            if (x==10) {
+                var y = 20; //initialization 
+                var y;
+                y =80;  //shadowing fresher ask the question the interview..
+            }
+            document.write("X =" + x + "<br>" + "Y =" +y)  
+        }
+         const x=10;
+            //const x=20;
+            document.write("X = " + x)
+        f1();
+         x =10;
+            document.write("x= " + x);
+            var x ; 
+            */
+
+        function f3(){
+           window.x = 10;
+           document.write("X in function 1 : " + x + "<br>");
+
+        }
+        function f2() {
+            document.write("X in function 2 :" + x)
+        }
+        f3();
+        f2();
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <input id="name" type="text" placeholder="Enter Name" value=""><br><br>
+        <input id="email" type="email" placeholder="Enter Email" value=""><br><br>
+        <input id="number" type="number" placeholder="Enter Number" value=""><br><br>
+        <button onclick="inpFun()">Submit</button>
+        <h1 id="dis-name">Show name here</h1><br>
+        <h1 id="dis-email">Show email here</h1><br>
+        <h1 id="dis-number">Show number here</h1><br>
+        <script>
+            function inpFun() {
+                var studentName = document.getElementById("name").value;
+                var studentEmail = document.getElementById("email").value;
+                var studentNumber = document.getElementById("number").value;
+                document.getElementById("dis-name").innerText=studentName;
+                document.getElementById("dis-email").innerText=studentEmail;
+                document.getElementById("dis-number").innerText=studentNumber;
+            }
+        </script>
+    </body>
+</html>

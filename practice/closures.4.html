@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Closures4</title>
+</head>
+<body>
+    <script>
+        var sum =function(a,b,c){
+            return{
+                getsumTwo:function(){
+                    return a+b;
+                },
+                getsumThree:function(){
+                    return a+b+c;
+                }
+            }
+        }
+        var res = sum(8,9,4);
+        console.log(res.getsumTwo());
+        console.log(res.getsumThree());
+        var res1 = sum(8,9,4);
+        console.log(res1.getsumTwo());
+        console.log(res1.getsumThree());
+
+    </script>
+</body>
+</html>

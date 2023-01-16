@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Register Document</title>
+    <script>
+        function f1() {
+            window.document.images[0].src="../emp.png";
+            window.document.forms[0].elements[1].value="Register"
+            window.document.forms[1].elements[1].value="Login"
+        }
+      //  f1();
+    </script>
+</head>
+<body onload="f1()">
+    <div>
+        <img src="" width="100" height="100" border="1">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h3>Register</h3>
+            User Name : 
+            <input type="text" name="txtname">
+            <input type="button">
+        </form>
+    </div>
+    <div>
+        <form name="login">
+            <h3>Login</h3>
+            Login : 
+            <input type="text" name="txtname">
+            <input type="button" name="btnlogin">
+        </form>
+    </div>
+</body>
+</html>

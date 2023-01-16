@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>call method</title>
+</head>
+<body>
+    <script>
+          var obj = {name : "patel"};
+
+            function data (age, work) {
+                return "hii " + this.name + ' age is ' + age + work;
+            }
+
+            console.log(data.apply(obj,[21, " software engg"] ));
+    </script>
+</body>
+</html>
+<!--  output -->
+<!--  hii patel age is 21 -->

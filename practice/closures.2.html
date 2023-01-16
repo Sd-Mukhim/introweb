@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = function(a,b,c){
+            return{
+                getSumTwo: function(){
+                    return a+b;
+                },
+                getSumThree:function(){
+                    return a+b+c;
+                }
+            }
+        }
+       var res= sum(7,8,9)
+       console.log(res.getSumTwo())
+       console.log(res.getSumThree())
+    </script>
+</body>
+</html>

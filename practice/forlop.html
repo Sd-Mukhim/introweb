@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>for of</title>
+    </head>
+    <body>
+        <script>
+            var arr = ["dog","cat","bull"]
+            for(var i=0; i<arr.length; i++){
+                console.log(arr[i]);
+            }
+            arr.forEach(arr => {
+                console.log(arr)
+            })
+            for(array in arr){
+                console.log(array)
+                console.log(arr[array])
+            }
+            for(var arrs of arr)
+            {
+                console.log(arrs)
+            }
+        </script>
+    </body>
+</html>
